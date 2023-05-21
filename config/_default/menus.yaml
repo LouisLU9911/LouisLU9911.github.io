@@ -21,6 +21,11 @@ main:                # sections in the website sidebar
     url: /search/
     weight: 4
 
+  - identifier: tags
+    name: Tags
+    url: /tags
+    weight: 5
+
   - identifier: github
     name: GitHub
     url: 'https://github.com/LouisLU9911'

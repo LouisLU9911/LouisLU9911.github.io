@@ -155,6 +155,13 @@ markup:
       # Enable custom attribute support for blocks
         block: true
 
+
+# Enable emoji
+enableEmoji: true
+
+# lastmod?
+enableGitInfo: true
+
 # If enableGitInfo is true, it will override any lastmod dates in our
 # front matter. We should at least allow ourselves to manually override
 # this value in the front matter.
