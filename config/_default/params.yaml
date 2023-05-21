@@ -27,7 +27,7 @@ tagline: From Dusk Till Dawn
 # Custom footer text on left sidebar. Use HTMl if needed.
 # "&copy;" and "{year}" will be replaced by © and the current year.
 footer: >-
-  Power by <a href="https://gohugo.io">Hugo</a>. Built with <a href="https://github.com/sergeyklay/gohugo-theme-ed"
+  Powered by <a href="https://gohugo.io">Hugo</a>. Built with <a href="https://github.com/sergeyklay/gohugo-theme-ed"
   target="_blank" rel="noopener noreferrer">Ed</a>. Distributed under an MIT
   license.
 
