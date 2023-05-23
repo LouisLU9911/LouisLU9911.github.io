@@ -6,7 +6,7 @@ author: Louis LU
 type: post
 tag:
   - hello-world
-annotations: true
+annotations: false
 ---
 
 # Hello, world!
