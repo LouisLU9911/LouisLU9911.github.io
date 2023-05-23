@@ -56,12 +56,12 @@ feedSize: 25
 recentPostsSize: 5
 
 contact:
-  # TODO: add contacts here
+  # No contact
   # Forms Backend URL, used in contacts form
-  formAction: 'https://submit-form.com/example'
+  formAction: ''
 
   # Contact form email subject
-  emailSubject: Contact form submission
+  emailSubject: ''
 
   # Where should the user be redirected after successful form submit?
   thanksUrl: /thanks
