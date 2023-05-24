@@ -92,7 +92,7 @@ seo:
   anonymizeIp: true
 
 social:
-  # TODO: add social accounts
+  # Do not display social media account
   # Array of Facebook Page Admin IDs for Domain Insights
   facebookAdminIds: []
 
