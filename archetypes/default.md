@@ -10,6 +10,7 @@ source: ""            # The source of the text
 rights: ""            # Rights for this text
 pageTitle:            # The title for the content w/o setting <title> tag
 private: true         # Hide text from search engines
+katex: false          # enable latex
 tags:
   - ""
 type: posts

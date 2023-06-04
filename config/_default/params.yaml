@@ -37,10 +37,6 @@ footer: >-
 # - search index
 # - ...
 mainSections:
-  - posts
-  - dramas
-  - narratives
-  - poems
   - how-to
 
 # Posts date format, for example: 2006-01-02

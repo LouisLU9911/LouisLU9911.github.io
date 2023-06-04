@@ -14,6 +14,7 @@ tags:
   - github
   - github-actions
   - github-pages
+  - latex
 toc: false  # enable it if you want to show the contents in the sidebar
 ---
 
@@ -41,6 +42,10 @@ on tedious tasks such as deployment and server operations :neutral_face:,
 ### (Optional) Ed's Dependencies
 
 * [go >= 1.12](https://go.dev)
+
+### (Optional) Katex
+
+* [Katex](https://katex.org/)
 
 ## Create a new repo
 
@@ -94,10 +99,53 @@ Just use it! :stuck_out_tongue_closed_eyes:
 If you have set it up correctly, the website will automatically update every
 time you push a new commit. :sunglasses: Enjoy it!
 
+## Add Latex support with Katex
+
+To add LaTeX support to your website using KaTeX, create a file
+named `katex.html` in your `layouts/partials` folder.
+
+The following code snippet is taken from [the KaTeX documentation](https://katex.org/docs/browser.html#starter-template).
+
+* `layouts/partials/katex.html`
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+    integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+
+<!-- The loading of KaTeX is deferred to speed up page rendering -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+    integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+    crossorigin="anonymous"></script>
+
+<!-- To automatically render math in text elements, include the auto-render extension: -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+```
+
+You can include this file in your `layouts/partials/footer.html` file like this:
+
+```html
+<!-- Your original footer.html (It may come from the theme you used) -->
+
+{{ if .Params.katex }}{{ partial "katex.html" . }}{{ end }}
+```
+
+To enable KaTeX on a specific post, add the following to its
+[front matter](https://gohugo.io/content-management/front-matter/):
+
+```markdown
+---
+# other settings in the front matter
+katex: true
+---
+```
+
 ## References
 
 * [Hugo](https://gohugo.io)
 * [Ed](https://gohugo-theme-ed.netlify.app)
+* [Katex](https://katex.org/)
 * [GitHub Actions](https://github.com/features/actions)
 * [GitHub Pages](https://pages.github.com/)
 * [How to build personal blog using GitHub Pages and Hugo](https://blog.hellohuigong.com/en/posts/how-to-build-personal-blog-with-github-pages-and-hugo/)
