@@ -10,11 +10,10 @@ tags:
   - blog
   - hugo
   - hugo-theme
+  - latex
   - gohugo-theme-ed
-  - github
   - github-actions
   - github-pages
-  - latex
 toc: false  # enable it if you want to show the contents in the sidebar
 ---
 
