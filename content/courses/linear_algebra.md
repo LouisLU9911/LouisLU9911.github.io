@@ -23,6 +23,8 @@ annotations: false    # Disable annotation via hypothesis on this page
 This post contains notes on the MIT OpenCourseWare Linear Algebra
 [course](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/video_galleries/video-lectures/).
 
+{{< toc >}}
+
 ## LECTURE 1: THE GEOMETRY OF LINEAR EQUATIONS
 
 * **Ax is a combination of the columns of A.**
@@ -39,4 +41,64 @@ Ax =
 1 \begin{bmatrix} 2 \\\\ 1 \end{bmatrix} +
 2 \begin{bmatrix} 5 \\\\ 2 \end{bmatrix} =
 \begin{bmatrix} 12 \\\\ 7 \end{bmatrix}
+$$
+
+## LECTURE 2: ELIMINATION WITH MATRICES
+
+### 2.1 Example Equations
+
+$$
+\begin{align*}
+x + 2y + z &= 2 \\\\
+3x + 8y + z &= 12 \\\\
+4y + z &= 2
+\end{align*}
+$$
+
+### 2.2 Elimination
+
+#### 2.2.1 Success
+
+$$
+A =
+\begin{bmatrix} 1 & 2 & 1 \\\\ 3 & 8 & 1 \\\\ 0 & 4 & 1 \end{bmatrix}
+\underrightarrow{(2,1)} \begin{bmatrix} 1 & 2 & 1 \\\\ 0 & 2 & -2 \\\\ 0 & 4 & 1 \end{bmatrix}
+\underrightarrow{(3,2)} \begin{bmatrix} 1 & 2 & 1 \\\\ 0 & 2 & -2 \\\\ 0 & 0 & 5 \end{bmatrix}
+$$
+
+Augemented matrix
+
+$$
+b =
+\begin{bmatrix} 2 \\\\ 12 \\\\ 2 \end{bmatrix}
+\rarr \begin{bmatrix} 2 \\\\ 6 \\\\ 2 \end{bmatrix}
+\rarr \begin{bmatrix} 2 \\\\ 6 \\\\ -10 \end{bmatrix}
+$$
+
+$$
+1^{st}\space pivot \rarr A_{1,1} \rarr 1
+$$
+
+$$
+U \coloneqq \begin{bmatrix} 1 & 2 & 1 \\\\ 0 & 2 & -2 \\\\ 0 & 0 & 5 \end{bmatrix}
+$$
+
+#### 2.2.2 Failure
+
+* Temporary failure: If a zero is encountered in the pivot position, we can perform a row exchange to rectify the situation.
+* Complete failure: If a zero is encountered and there are no rows below it for exchange, the matrix is not invertible.
+
+### 2.3 Back-Substitution
+
+$$
+\begin{align*}
+x + 2y + z &= 2 \\\\
+2y - 2z &= 6 \\\\
+5z &= -10
+\end{align*} \rarr
+\begin{align*}
+x &= 2 \\\\
+y &= 1 \\\\
+z &= -2
+\end{align*}
 $$
