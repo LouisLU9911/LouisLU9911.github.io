@@ -25,7 +25,7 @@ This post contains notes on the MIT OpenCourseWare Linear Algebra
 
 {{< toc >}}
 
-## LECTURE 1: THE GEOMETRY OF LINEAR EQUATIONS
+## LECTURE 1: The Geometry of Linear Equations
 
 * **Ax is a combination of the columns of A.**
 
@@ -43,7 +43,7 @@ Ax =
 \begin{bmatrix} 12 \\\\ 7 \end{bmatrix}
 $$
 
-## LECTURE 2: ELIMINATION WITH MATRICES
+## LECTURE 2: Elimination with Matrices
 
 ### 2.1 Example Equations
 
@@ -66,7 +66,7 @@ A =
 \underrightarrow{(3,2)} \begin{bmatrix} 1 & 2 & 1 \\\\ 0 & 2 & -2 \\\\ 0 & 0 & 5 \end{bmatrix}
 $$
 
-Augemented matrix
+Augmented matrix
 
 $$
 b =
@@ -80,7 +80,8 @@ $$
 $$
 
 $$
-U \coloneqq \begin{bmatrix} 1 & 2 & 1 \\\\ 0 & 2 & -2 \\\\ 0 & 0 & 5 \end{bmatrix}
+U \coloneqq \begin{bmatrix} 1 & 2 & 1 \\\\ 0 & 2 & -2 \\\\ 0 & 0 & 5 \end{bmatrix} \\\\
+c \coloneqq \begin{bmatrix} 2 \\\\ 6 \\\\ -10 \end{bmatrix}
 $$
 
 #### 2.2.2 Failure
