@@ -103,3 +103,102 @@ y &= 1 \\\\
 z &= -2
 \end{align*}
 $$
+
+
+### 2.4 Matrices Multiplication
+
+$$
+\begin{align*}
+matrix \times column &= matrix \\\\
+row \times matrix &= row
+\end{align*}
+$$
+
+$$
+\begin{bmatrix} ? & ? & ? \\\\ ? & ? & ? \\\\ ? & ? & ? \end{bmatrix}
+\begin{bmatrix} 1 & 2 & 1 \\\\ 3 & 8 & 1 \\\\ 0 & 4 & 1 \end{bmatrix} = 
+\begin{bmatrix} 1 & 2 & 1 \\\\ 0 & 2 & -2 \\\\ 0 & 4 & 1 \end{bmatrix}
+\rarr
+\begin{bmatrix} 1 & 0 & 0 \\\\ -3 & 1 & 0 \\\\ 0 & 0 & 1 \end{bmatrix}
+\begin{bmatrix} 1 & 2 & 1 \\\\ 3 & 8 & 1 \\\\ 0 & 4 & 1 \end{bmatrix} = 
+\begin{bmatrix} 1 & 2 & 1 \\\\ 0 & 2 & -2 \\\\ 0 & 4 & 1 \end{bmatrix}
+$$
+
+
+#### 2.4.1 Elementary Matrix
+
+> We call it **E** for **elementary** or **elimination**.
+
+$$
+\begin{align*}
+E_{21} &\coloneqq \begin{bmatrix} 1 & 0 & 0 \\\\ -3 & 1 & 0 \\\\ 0 & 0 & 1 \end{bmatrix} \\\\
+E_{32} &\coloneqq \begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & -2 & 1 \end{bmatrix}
+\end{align*}
+$$
+
+* **Associative Law**
+
+$$
+\begin{align*}
+E_{32}(E_{21}A) &= U \\\\
+(E_{32}E_{21})A &= U
+\end{align*}
+\rarr E_{32}E_{21} =
+\begin{bmatrix} 1 & 2 & 1 \\\\ 0 & 2 & -2 \\\\ 0 & 4 & 1 \end{bmatrix}
+$$
+
+#### 2.4.2 Permutation Matrix
+
+* Exchange rows 1 and 2
+
+$$
+\begin{bmatrix} ? & ? \\\\ ? & ? \end{bmatrix}
+\begin{bmatrix} a & b \\\\ c & d \end{bmatrix} = 
+\begin{bmatrix} c & d \\\\ a & b \end{bmatrix}
+\rarr
+\begin{bmatrix} 0 & 1 \\\\ 1 & 0 \end{bmatrix}
+\begin{bmatrix} a & b \\\\ c & d \end{bmatrix} = 
+\begin{bmatrix} c & d \\\\ a & b \end{bmatrix}
+$$
+
+> We call it **P** for **permutation**.
+
+$$
+P \coloneqq \begin{bmatrix} 0 & 1 \\\\ 1 & 0 \end{bmatrix} 
+$$
+
+#### 2.4.3 Column Operations
+
+> To do column operations, the matrix multiples on the right.
+> To do row operations, it multiples on the left.
+
+$$
+\begin{bmatrix} a & b \\\\ c & d \end{bmatrix}
+\begin{bmatrix} ? & ? \\\\ ? & ? \end{bmatrix} = 
+\begin{bmatrix} b & a \\\\ d & c \end{bmatrix}
+\rarr
+\begin{bmatrix} a & b \\\\ c & d \end{bmatrix}
+\begin{bmatrix} 0 & 1 \\\\ 1 & 0 \end{bmatrix} = 
+\begin{bmatrix} b & a \\\\ d & c \end{bmatrix}
+$$
+
+* **NO commutaitive law**: AB != BA
+
+#### 2.4.4 Inverses Preview
+
+* Q: How do you get from U back to A?
+* A: _The inverse matrix._
+
+$$
+\begin{bmatrix} ? & ? & ? \\\\ ? & ? & ? \\\\ ? & ? & ? \end{bmatrix}
+\begin{bmatrix} 1 & 0 & 0 \\\\ -3 & 1 & 0 \\\\ 0 & 0 & 1 \end{bmatrix} = 
+\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \end{bmatrix}
+\rarr
+\begin{bmatrix} 1 & 0 & 0 \\\\ 3 & 1 & 0 \\\\ 0 & 0 & 1 \end{bmatrix}
+\begin{bmatrix} 1 & 0 & 0 \\\\ -3 & 1 & 0 \\\\ 0 & 0 & 1 \end{bmatrix} = 
+\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 1 & 0 \\\\ 0 & 0 & 1 \end{bmatrix}
+$$
+
+$$
+\rarr E^{-1}E=I
+$$
