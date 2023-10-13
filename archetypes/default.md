@@ -4,7 +4,7 @@ date: {{ .Date }}
 draft: true
 featuredImage: ""
 description: ""
-author: Louis LU
+author: Zhaoyan LU
 editor: ""
 source: ""            # The source of the text
 rights: ""            # Rights for this text

@@ -1,6 +1,6 @@
 # louislu9911.github.io
 
-This repo is used to build Louis LU's blog. The blog is powered by [Hugo](https://gohugo.io)
+This repo is used to build Zhaoyan LU's blog. The blog is powered by [Hugo](https://gohugo.io)
 and built with [Ed](https://github.com/sergeyklay/gohugo-theme-ed).
 
 ## Prerequisites

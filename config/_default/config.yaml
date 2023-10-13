@@ -10,7 +10,7 @@ defaultContentLanguage: en
 #
 # NB: Final title of shareable pages will be this plus the
 #     title of the page. Eg. "Contacts - Ed."
-title: Louis LU
+title: Zhaoyan LU
 
 # Use full path to theme's repository in case of using Hugo Modules.
 # This is replaced in go.mod for exampleSite to point to the directory above.
@@ -138,10 +138,10 @@ sitemap:
   priority: 0.5
 
 author:
-  name: Louis LU
+  name: Zhaoyan LU
   email: louislu9911@gmail.com
   github: LouisLU9911
-  location: 'Beijign, China'
+  location: 'London, England'
 
 # For more see https://gohugo.io/getting-started/configuration-markup/
 markup:
