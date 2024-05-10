@@ -11,9 +11,9 @@ main:                # sections in the website sidebar
     url: /about/
     weight: 2
 
-  - identifier: how-to
-    name: How-to Guides
-    url: /how-to
+  - identifier: posts
+    name: Posts
+    url: /posts
     weight: 3
 
   - identifier: courses

@@ -1,2 +1,2 @@
 server:
-	hugo server
+	hugo server --disableFastRender

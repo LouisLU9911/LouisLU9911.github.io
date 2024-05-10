@@ -37,7 +37,7 @@ footer: >-
 # - search index
 # - ...
 mainSections:
-  - how-to
+  - posts
 
 # Posts date format, for example: 2006-01-02
 dateFormat: ':date_long'
